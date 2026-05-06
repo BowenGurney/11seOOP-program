@@ -15,3 +15,5 @@ class Pet:
 #ACTIVITIES:
 #1. Add another pet to the list (try different methods)
 #2. Vaccinate each pet in the list
+
+
