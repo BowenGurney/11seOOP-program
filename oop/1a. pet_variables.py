@@ -3,8 +3,8 @@ animal_category = 'Cat'
 age = 3
 vaccinated = True
 ccard = '3423 2326 7543 1234'
-billing_address = '17 Park Drive, The Shire 2695'
-owner_name = 'Alex Ngyuen'
+billing_address = '17 Park Drive'
+owner_name = 'Alex Jones'
 account_balance = 129.95
 
 # ACTIVITIES:
@@ -17,3 +17,11 @@ account_balance = 129.95
 #6 Subtract $25 from account balance
 
 print(name)
+age = age + 1
+print(age)
+vaccinated = False
+ccard = input('Edit Details for Credit Card Number: ')[:14]
+print(ccard)
+account_balance = account_balance - 25
+print(f'Account Balance: {account_balance}')
+
