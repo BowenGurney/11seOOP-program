@@ -4,7 +4,7 @@
 pet_name = ['Dork',  'Ponyo', 'Princess Mononoke', 'Prince Ashitaka']
 species = ['Chihuahua', 'Pomeranian', 'Yorkshire Terrier', 'Maltese', 'Papillon', 'Shih Tzu', 'Pug']
 age = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 120]
-vaccination_status =  [False, True]
+vaccination_status = [False, True, False, True]
 
 #2. Use a for loop to print parallel list details. This will mean that one complete printout will look like:
 '''
@@ -14,11 +14,12 @@ Age: 8
 Vaccination Status: False
 '''
 
-for i in range(1):
-    print(pet_name)
-    print(species)
-    print(age)
-    print(vaccination_status)
+for name, species, age, vaccination in zip(pet_name, species, age, vaccination_status):
+    print(f'Pet name: {name}')
+    print(f'Species: {species}')
+    print(f'Age: {age}')
+    print(f'Vaccination Status: {vaccination}')
+
 #3. Demonstrate what happens when an item is deleted
 
 
