@@ -4,9 +4,9 @@
 #3 Add values to the dictionary
 
 pet1 = {
-'name' : 'Bonnie',
+'name' : 'Miss Bonnie',
 'animal category' : 'Snapping turtle',
-'age' : 3,
+'age' : 4,
 'vaccinated' : True,
 'credit card' : '3423 2326 7543 1234',
 'billing address' : '17 Park Drive, The Shire 3695',
