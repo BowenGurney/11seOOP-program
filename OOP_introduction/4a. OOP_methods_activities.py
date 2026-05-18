@@ -2,9 +2,8 @@
 # - Create a method (function belonging to a class)
 # - Discuss the use of attributes in the method
 
-while_number = 0
-
 class Pet:
+    while_number = 0
     def __init__(self, name, category, age=0, vaccination=True, ccard='unknown', acc_balance=0, acc_bill=0):
         self.name = name
         self.category = category
@@ -15,7 +14,8 @@ class Pet:
         self.account_bill = acc_bill
 
     def __str__(self):
-      my_status = 'Name: ' + self.name + '\n Category: ' + self.category + '\n Age: ' + str(self.age) + '\n Vaccination: ' + str(self.vaccinated)
+      human_age = self.pet_to_human_years()
+      my_status = 'Name: ' + self.name + '\n Category: ' + self.category + '\n Age: ' + str(self.age) + '\n Vaccination: ' + str(self.vaccinated) + '\n Human age: ' + str(human_age)
       return my_status
     
     def have_birthday(self):
@@ -26,6 +26,7 @@ class Pet:
         print(f"\n Payment received! {pet.name}'s balance is cleared.")
 
     def vaccination_process(self):
+        while_number = 0
         if pet.vaccinated == False:
             while while_number == 0:
                 confirmation = input(f'Do you wish to vaccinate {pet.name}? ')
@@ -44,7 +45,15 @@ class Pet:
                     print('Thank you for your time.')
                 else:
                     print('Yes or no, please.')
-
+    
+    def pet_to_human_years(self):
+        if pet.category == 'Dog':
+            human_age = pet.age * 7 
+        elif pet.category == 'Cat':
+            human_age = pet.age * 6
+        else:
+            human_age = None
+        return human_age
 
 p1 = Pet('Jack', 'Dog', 2, True, acc_balance=100)
 p2 = Pet('Back', 'Cat', 5, False, acc_balance=1000)
@@ -56,6 +65,7 @@ for pet in Pets:
     while_number = 0
     print(pet)
     pet.vaccination_process()
+    pet.pet_to_human_years()
 
     
 #ACTIVITIES:

@@ -6,3 +6,4 @@
 import random
 
 class Fighter:
+    print('hi')
