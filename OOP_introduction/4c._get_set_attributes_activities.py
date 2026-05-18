@@ -8,8 +8,6 @@ class Pet:
         self.vaccinated = False
         self.weight = 0
 
-   
-
 #ACTIVITIES:
 #1. Add attribute weight and write a getter method for weight
 #2. Add setter method or weight and make sure it is a positive number (integer or float)

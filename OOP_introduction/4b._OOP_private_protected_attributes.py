@@ -22,7 +22,11 @@ class Pet:
         my_status = 'Name: ' + self._name +'\nCategory: ' + self.__category + '\nAge: ' + str(self.age) +'\nPayment status: ' + payment_status + '\nVaccinated: '+ str(self.vaccinated)
         return my_status
 
-p1 = Pet(name = 'Bonnie', category = 'Cat', age = 10)
+p1 = Pet(name = 'Bonnie', category = 'Cat', age = 10, breed = 'Ur mom')
+print(p1)
+p1.__category = 'Dog'
+print(p1)
+p1 = Pet(name='Bonnie',category='Dog',age=10,breed='Ur mom')
 print(p1)
 
 #ACTIVITIES:
